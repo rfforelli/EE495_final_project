@@ -1,0 +1,21 @@
+name: sho-project
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - scipy
+  - matplotlib
+  - scikit-learn
+  - h5py
+  - jupyterlab
+  - notebook
+  - ipykernel
+  - pandas
+  - pytorch
+  - cpuonly
+  - pip:
+      - gdown
+      - torchdiffeq
