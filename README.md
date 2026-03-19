@@ -1,4 +1,4 @@
-# Scientific Machine Learning for SHO Spectral Fitting in BE-PFM
+# Extending Physics-Constrained Neural Networks for SHO Spectral Fitting
 
 Final project code for EE 495: Scientific Machine Learning. We studied the inverse problem of recovering simple harmonic oscillator (SHO) parameters from band-excitation piezoresponse force microscopy (BE-PFM) spectra. The project began as an extension of an existing research effort on physics-constrained neural networks for fast spectroscopic fitting, and we expanded it into a comparative study of four modeling paradigms:
 
