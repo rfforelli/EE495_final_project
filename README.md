@@ -130,7 +130,7 @@ For each channel,
 
 x̃ = (x − μ) / σ
 
-where \(\mu\) and \(\sigma\) are computed globally across the entire training tensor for that channel.
+where μ and σ are computed globally across the entire training tensor for that channel.
 
 #### Standardization for output parameters
 
@@ -223,7 +223,7 @@ The predicted parameters are then inserted into the SHO equation only at evaluat
 
 The Pure NN uses a fully connected multilayer perceptron:
 
-- flattened input of dimension \(80 \times 2 = 160\)
+- flattened input of dimension 80 × 2 = 160\)
 - hidden layers of sizes 256, 128, 64
 - ReLU nonlinearities
 - final linear layer to 4 outputs
@@ -309,9 +309,9 @@ and finally decoded into the predicted parameters:
 
 The Neural ODE baseline contains:
 
-- an encoder \(x \mapsto z_0\)
+- an encoder x ↦ z₀
 - an ODE block defined by a neural vector field
-- a decoder \(z(T) \mapsto \hat{\theta}\)
+- a decoder z(T) ↦ θ̂
 
 The latent dynamics are integrated numerically using `torchdiffeq.odeint`.
 
@@ -397,36 +397,36 @@ The main results are summarized below.
 
 | Model | Avg Reconstruction MSE |
 |---|---:|
-| Pure NN | \(1.6506 \times 10^{-1}\) |
-| PINN | \(6.3986 \times 10^{-2}\) |
-| Neural ODE | \(1.3784 \times 10^{-1}\) |
-| Physics-Constrained NN | **\(4.5914 \times 10^{-2}\)** |
+| Pure NN | 1.6506 × 10^-1 |
+| PINN | 6.3986 × 10^-2 |
+| Neural ODE | 1.3784 × 10^-1 |
+| Physics-Constrained NN | 4.5914 × 10^-2 |
 
 ### Parameter MSE
 
 #### Physics-Constrained NN
-- Amplitude: \(7.9470 \times 10^{-9}\)
-- Frequency: \(7.3416 \times 10^{6}\)
-- Quality Factor: \(5.4671 \times 10^{3}\)
-- Phase: \(4.9509 \times 10^{1}\)
+Amplitude: 7.9470 × 10^-9
+Frequency: 7.3416 × 10^6
+Quality Factor: 5.4671 × 10^3
+Phase: 4.9509 × 10^1
 
 #### Pure NN
-- Amplitude: \(4.1930 \times 10^{-12}\)
-- Frequency: \(7.7675 \times 10^{5}\)
-- Quality Factor: \(8.3523 \times 10^{2}\)
-- Phase: \(1.0040\)
+Amplitude: 4.1930 × 10^-12
+Frequency: 7.7675 × 10^5
+Quality Factor: 8.3523 × 10^2
+Phase: 1.0040
 
 #### PINN
-- Amplitude: \(1.0823 \times 10^{-11}\)
-- Frequency: \(6.5413 \times 10^{5}\)
-- Quality Factor: \(7.4528 \times 10^{2}\)
-- Phase: \(2.1506\)
+Amplitude: 1.0823 × 10^-11
+Frequency: 6.5413 × 10^5
+Quality Factor: 7.4528 × 10^2
+Phase: 2.1506
 
 #### Neural ODE
-- Amplitude: \(5.3104 \times 10^{-12}\)
-- Frequency: \(5.6782 \times 10^{5}\)
-- Quality Factor: \(6.7407 \times 10^{2}\)
-- Phase: \(9.9670 \times 10^{-1}\)
+Amplitude: 5.3104 × 10^-12
+Frequency: 5.6782 × 10^5
+Quality Factor: 6.7407 × 10^2
+Phase: 9.9670 × 10^-1
 
 ---
 
