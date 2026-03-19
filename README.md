@@ -464,6 +464,6 @@ See the Jupyter notebook for all training results.
 
 ---
 
-NOTE: The values presently in the Jupiter Notebook may be slightly different than the values reported here and in the two page report since we have ran it again since writing this but they should be substantially similar.
+NOTE: The values presently in the Jupyter Notebook may be slightly different than the values reported here and in the two page report since we have ran it again since writing this but they should be substantially similar.
 
 Ryan Forelli and Ethan Gindlesperger
